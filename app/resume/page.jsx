@@ -1,6 +1,6 @@
 "use client";
 
-import {FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs} from 'react-icons/fa';
+import {FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaLaravel, FaGit, FaDatabase} from 'react-icons/fa';
 import { SiTailwindcss, siNextdotjs } from 'react-icons/si';
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 import {ScrollArea} from "@/components/ui/scroll-area";
@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 
 const about = {
   title:"About me",
-  description:"lorem ipsum dolor sit amet.",
+  description:"This is my profile",
   info:[
     {
       fieldName:"Name",
@@ -35,33 +35,33 @@ const about = {
 };
 const experience = {
   icon: "/assets/resum.badge.svg",
-  title: "My Experience",
-  description: "lorem ipsum",
+  title: "Course",
+  description: "I attempt many course to improve my skills",
   items: [
       {
-          company: "Tech",
-          position: "Full Stack Developer",
-          duration: "2022 - Present",
+          company: "PedroTech",
+          position: "ReactJS",
+          duration: "2024",
       },
       {
-          company: "Tech",
-          position: "Full Stack Developer",
-          duration: "2022 - 2021",
+          company: "Programmer Zaman Now",
+          position: "Laravel",
+          duration: "2023",
       },
       {
-          company: "Tech",
-          position: "Full Stack Developer",
-          duration: "2022 - 2021",
+        company: "BelajarDiRumahAfif",
+        position: "Laravel",
+        duration: "2023",
       },
       {
-          company: "Tech",
-          position: "Full Stack Developer",
-          duration: "2022 - 2021",
+        company: "CodePolitan",
+        position: "KelasFullstack",
+        duration: "2023",
       },
       {
-          company: "Tech",
-          position: "Full Stack Developer",
-          duration: "2022 - 2021",
+          company: "Dicoding",
+          position: "Web Development",
+          duration: "2022",
       },
   ]
 }
@@ -69,23 +69,23 @@ const experience = {
 const education = {
   icon: "/assets/resum.badge.svg",
   title: "My Education",
-  description: "lorem ipsum",
+  description: "Formal Education",
   items: [
       {
-          institution: "Tech",
-          degree: "Full Stack Developer",
-          duration: "2022",
+          institution: "IPB - Computer Science",
+          degree: "Bachelor",
+          duration: "2020-2024",
       },
       {
-          institution: "Tech",
-          degree: "Full Stack Developer",
-          duration: "2022",
+          institution: "SMAN 1 Sumedang",
+          degree: "Senior High School",
+          duration: "2017-2020",
       },
   ]
 }
 const skills = {
   title: "My Skills",
-  description: "lorem ipsum",
+  description: "This is my tech stack which I ever use",
   skillList: [
       {
           icon: <FaHtml5/>,
@@ -107,6 +107,18 @@ const skills = {
           icon: <FaNodeJs/>,
           name: "node.js",
       },
+      {
+          icon: <FaLaravel/>,
+          name: "Laravel",
+      },
+      {
+          icon: <FaDatabase/>,
+          name: "MySQL",
+      },
+      {
+          icon: <FaGit/>,
+          name: "Git",
+      },
   ]
 }
 
@@ -123,7 +135,7 @@ const Resume = () => {
       <div className='container mx-auto'>
         <Tabs defaultValue='experience' className='flex flex-col xl:flex-row gap-[60px]'>
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
+            <TabsTrigger value="experience">Course</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
@@ -158,7 +170,7 @@ const Resume = () => {
                       {education.items.map((item,index)=>(
                         <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1" >
                           <span className='text-accent'>{item.duration}</span>
-                          <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.company}</h3>
+                          <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.degree}</h3>
                           <div className="flex items-center gap-3">
                             <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
                             <p className="text-white/60">{item.institution}</p>
@@ -204,7 +216,6 @@ const Resume = () => {
                     ))}
                   </ul>
                 </div>
-                about
               </TabsContent>
             </div>
         </Tabs>

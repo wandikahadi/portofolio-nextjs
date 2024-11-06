@@ -14,19 +14,51 @@ import WorkSliderBtns from './../../components/WorkSliderBtns';
 const projects = [
   {
     num:"01",
-    category:"frontend",
+    category:"Frontend Developer",
     title:"project 1",
-    description:"lorem ipsum1",
-    stack:[{name:"Html 5"}, {name:"Css 5"}, {name:"javascript"}],
+    description:"BEM IPB WEBSITE",
+    stack:[{name:"ReactJS"}, {name:"TailwindCSS"}],
+    image:"/img/project/bem.png",
     live:"",
     github:"",
   },
   {
     num:"02",
-    category:"backend",
+    category:"Backend Developer",
     title:"project 2",
-    description:"lorem ipsum1",
-    stack:[{name:"Html 5"}, {name:"Css 5"}, {name:"javascript"}],
+    description:"AMNET",
+    stack:[{name:"Laravel"}],
+    image:"/img/project/amnet.png",
+    live:"",
+    github:"",
+  },
+  {
+    num:"03",
+    category:"Fullstack Developer",
+    title:"project 3",
+    description:"Amora",
+    stack:[{name:"Laravel"}, {name:"Bootstrap5"}, {name:"Ajax"}],
+    image:"/img/project/amora.png",
+    live:"",
+    github:"",
+  },
+  {
+    num:"04",
+    category:"Fullstack Developer",
+    title:"project 4",
+    description:"CMS",
+    stack:[{name:"Laravel"}, {name:"Bootstrap5"}],
+    image:"/img/project/cms.png",
+    live:"",
+    github:"",
+  },
+  {
+    num:"05",
+    category:"Frontend Developer",
+    title:"project 5",
+    description:"MyPortofolio",
+    stack:[{name:"ReactJS"}, {name:"TailwindCSS"}],
+    image:"/img/project/myportofolio.png",
     live:"",
     github:"",
   },
@@ -105,7 +137,7 @@ const Work = () => {
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                       <div className="absolute top-0 bottom-0 w-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
-                        <Image src="/assets/wandika.jpg" fill className="object-cover"alt=""/>
+                        <Image src={project.image} fill className="object-fit "alt="project"/>
                       </div>
                     </div>
                   </SwiperSlide>

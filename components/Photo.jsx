@@ -8,7 +8,7 @@ const Photo = () => {
     <div className="w-full h-full relative">
         <motion.div>
             <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[298px] mix-blend-lighten absolute">
-                <Image src="/assets/wandika.jpg" priority quality={100} fill alt="" className="object-contain" />
+                <Image src="/img/wandika.png" priority quality={100} fill alt="" className="object-contain" />
             </div>
         </motion.div>
         {/* circle */}

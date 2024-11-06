@@ -17,7 +17,7 @@ export default function Home() {
               <div className="flex flex-col xl:flex-row items-center gap-8">
                 {/* CV */}
                 <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-                  <span>Download CV</span>
+                  <span><a href="/file/CV.pdf"></a> Download CV</span>
                   <FiDownload className="text-xl"></FiDownload>
                 </Button>
                 {/* Social */}

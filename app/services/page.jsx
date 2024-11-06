@@ -8,14 +8,14 @@ import { motion } from "framer-motion";
 const services = [
   {
       num: "01",
-      title: "Frontend Development",
-      description: "lotem ipsum dolor sit amet",
+      title: "Frontend Dev",
+      description: "ReactJS, VueJS, TailwindCSS",
       href: "",
     },
     {
       num: "02",
-      title: "Backend Development",
-      description: "lotem ipsum dolor sit amet",
+      title: "Backend Dev",
+      description: "Laravel, ExpressJS, MySQL",
       href: "",
   },
 ];
